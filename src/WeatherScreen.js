@@ -11,7 +11,7 @@ class WeatherScreen extends Component<{}> {
   }
 
   render() {
-    return <View />
+    return <View />;
   }
 }
 
