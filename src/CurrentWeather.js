@@ -8,6 +8,6 @@ export default class CurrentWeather {
     const { weather } = data;
     this.main = weather[0].main;
     this.iconURL = 'https://openweathermap.org/img/w/'
-      + '${weather[0].icon}.png';
+      + `${weather[0].icon}.png`;
   }
 }
