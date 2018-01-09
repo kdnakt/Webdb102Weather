@@ -1,17 +1,37 @@
 // @flow
 
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { getCurrentWeather } from './WeatherService';
+import CurrentWeather from './CurrentWeather';
+
+type State = {
+  current: ?CurrentWeather,
+}
 
 class WeatherScreen extends Component<{}> {
+  constructor(props: {}) {
+    super(props);
+    this.state = { current: null };
+  }
+
   componentDidMount() {
     getCurrentWeather('Tokyo')
-      .then(current => console.log(current));
+      .then((current) => {
+        console.log('loaded weather info');
+        this.setState({current});
+      });
   }
 
   render() {
-    return <View />;
+    const { current } = this.state;
+    console.log('render', current);
+
+    return (
+      <View>
+        <Text>{current ? JSON.stringify(current) : ''}</Text>
+      </View>
+    );
   }
 }
 
