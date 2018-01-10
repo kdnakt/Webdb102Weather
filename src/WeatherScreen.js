@@ -8,24 +8,35 @@ import {
   ActivityIndicator,
   StyleSheet
 } from 'react-native';
-import { getCurrentWeather } from './WeatherService';
+import {
+  getCurrentWeather,
+  getWeatherForecast
+} from './WeatherService';
 import CurrentWeather from './CurrentWeather';
+import WeatherForecast from './WeatherForecast';
 
 type State = {
   current: ?CurrentWeather,
+  forecasts: WeatherForecast[],
 }
 
 class WeatherScreen extends Component<{}> {
   constructor(props: {}) {
     super(props);
-    this.state = { current: null };
+    this.state = { current: null, forecasts: [] };
   }
 
   componentDidMount() {
-    getCurrentWeather('Tokyo')
+    const city = 'Tokyo';
+    getCurrentWeather(city)
       .then((current) => {
         console.log('loaded weather info');
         this.setState({current});
+      });
+    getWeatherForecast(city)
+      .then((forecasts) => {
+        console.log('loaded forecasts info');
+        this.setState({forecasts});
       });
   }
 

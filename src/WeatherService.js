@@ -1,6 +1,7 @@
 // @flow
 
 import CurrentWeather from './CurrentWeather';
+import WeatherForecast from './WeatherForecast';
 
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 const API_KEY = 'YOUR_API_KEY';// TODO: change
@@ -18,4 +19,17 @@ function getCurrentWeather(city: string)
     .then(json => new CurrentWeather(json));
 }
 
-export { getCurrentWeather };
+function getWeatherForecastEndpoint(query: string) {
+  return `${BASE_URL}forecast?q=${query}`
+    + `&appid=${API_KEY}&lang=ja`;
+}
+
+function getWeatherForecast(city: string)
+  : Promise<WeatherForecast> {
+  const endpoint = getWeatherForecastEndpoint(city);
+  return fetch(endpoint)
+    .then(response => response.json())
+    .then(json => new WeatherForecast(json));
+}
+
+export { getCurrentWeather, getWeatherForecast };
