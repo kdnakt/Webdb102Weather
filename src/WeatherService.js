@@ -25,11 +25,17 @@ function getWeatherForecastEndpoint(query: string) {
 }
 
 function getWeatherForecast(city: string)
-  : Promise<WeatherForecast> {
-  const endpoint = getWeatherForecastEndpoint(city);
+  : Promise<WeatherForecast[]> {
+  const endpoint = getWeatherForecastEndpoint(city),
+    forecasts = [];
   return fetch(endpoint)
     .then(response => response.json())
-    .then(json => new WeatherForecast(json));
+    .then(json => {
+      json.list.forEach(forecast => {
+        forecasts.push(new WeatherForecast(forecast));
+      });
+      return forecasts;
+    });
 }
 
 export { getCurrentWeather, getWeatherForecast };
