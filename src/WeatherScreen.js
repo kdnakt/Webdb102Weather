@@ -6,14 +6,16 @@ import {
   Text,
   Image,
   ActivityIndicator,
-  StyleSheet
+  StyleSheet,
+  FlatList,
 } from 'react-native';
 import {
   getCurrentWeather,
-  getWeatherForecast
+  getWeatherForecast,
 } from './WeatherService';
 import CurrentWeather from './CurrentWeather';
 import WeatherForecast from './WeatherForecast';
+import ForecastListItem from './ForecastListItem';
 
 type State = {
   current: ?CurrentWeather,
@@ -40,6 +42,16 @@ class WeatherScreen extends Component<{}> {
       });
   }
 
+  renderForecasts() {
+    return (
+      <FlatList
+        data={this.state.forecasts}
+        renderItem={({ item }) => <ForecastListItem item={item} />}
+        keyExtractor={item => item.date.toString()}
+      />
+    );
+  }
+
   render() {
     const { current } = this.state;
     if (current == null) {
@@ -60,6 +72,7 @@ class WeatherScreen extends Component<{}> {
           source={{ uri: iconURL }}
           style={styles.icon}
         />
+        {this.renderForecasts()}
       </View>
     );
   }
