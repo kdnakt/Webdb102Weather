@@ -32,12 +32,10 @@ class WeatherScreen extends Component<{}> {
     const city = 'Tokyo';
     getCurrentWeather(city)
       .then((current) => {
-        console.log('loaded weather info', current);
         this.setState({current});
       });
     getWeatherForecast(city)
       .then((forecasts) => {
-        console.log('loaded forecasts info', forecasts);
         this.setState({forecasts});
       });
   }
