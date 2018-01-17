@@ -9,7 +9,7 @@ const routes = {
     screen: CityListScreen,
     navigationOptions: {
       title: '都道府県一覧',
-    }
+    },
   },
   Weather: {
     screen: WeatherScreen,
