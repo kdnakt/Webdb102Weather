@@ -18,7 +18,7 @@ class CityListScreen extends Component<{}> {
     return (
       <FlatList
         data={CITIES}
-        keyExtractor{item => item.en}
+        keyExtractor={item => item.en}
         renderItem={({ item }) => {
           <TouchableOpacity
             onPress={() => this.onPress(item)}

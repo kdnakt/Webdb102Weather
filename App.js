@@ -1,16 +1,25 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+// @flow
 
-import React, { Component } from 'react';
+import { StackNavigator } from 'react-navigation';
+import CityListScreen from './src/CityListScreen';
 import WeatherScreen from './src/WeatherScreen';
 
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <WeatherScreen />
-    );
-  }
-}
+const routes = {
+  CityList: {
+    screen: CityListScreen,
+    navigationOptions: {
+      title: '都道府県一覧',
+    }
+  },
+  Weather: {
+    screen: WeatherScreen,
+  },
+};
+
+const config = {
+  initialRouteName: 'CityList',
+};
+
+const App = StackNavigator(routes, config);
+
+export default App;
