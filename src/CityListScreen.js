@@ -19,7 +19,7 @@ class CityListScreen extends Component<{}> {
       <FlatList
         data={CITIES}
         keyExtractor={item => item.en}
-        renderItem={({ item }) => {
+        renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => this.onPress(item)}
             style={styles.itemContainer}
@@ -28,7 +28,7 @@ class CityListScreen extends Component<{}> {
               {item.name}
             </Text>
           </TouchableOpacity>
-        }}
+        )}
       />
     );
   }
