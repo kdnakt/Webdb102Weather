@@ -8,10 +8,18 @@ import {
   StyleSheet,
 } from 'react-native';
 import CITIES from './cities.json';
+import { type NavigationScreenProp }
+  from 'react-navigation/src/TypeDefinition';
 
-class CityListScreen extends Component<{}> {
+type Props = {
+  navigation: NavigationScreenProp<*>,
+};
+
+class CityListScreen extends Component<Props> {
   onPress(item: *) {
     console.log('onPress', item);
+    const { navigation } = this.props;
+    navigation.navigate('Weather', { city: item });
   }
 
   render() {

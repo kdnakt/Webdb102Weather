@@ -16,25 +16,39 @@ import {
 import CurrentWeather from './CurrentWeather';
 import WeatherForecast from './WeatherForecast';
 import ForecastListItem from './ForecastListItem';
+import  { type NavigationScreenProp }
+  from 'react-navigation/src/TypeDefinition';
+
+type Props = {
+  navigation: NavigationScreenProp<*>,
+};
 
 type State = {
   current: ?CurrentWeather,
   forecasts: WeatherForecast[],
-}
+};
 
-class WeatherScreen extends Component<{}> {
+class WeatherScreen extends Component<Props, State> {
+  static navigationOptions = ({ navigation }) => {
+    const { city } = navigation.state.params;
+    return {
+      title: `${city.name}の天気`,
+    }
+  }
+
   constructor(props: {}) {
     super(props);
     this.state = { current: null, forecasts: [] };
   }
 
   componentDidMount() {
-    const city = 'Tokyo';
-    getCurrentWeather(city)
+    const { navigation } = this.props;
+    const { city } = navigation.state.params;
+    getCurrentWeather(city.en)
       .then((current) => {
         this.setState({current});
       });
-    getWeatherForecast(city)
+    getWeatherForecast(city.en)
       .then((forecasts) => {
         this.setState({forecasts});
       });
