@@ -10,12 +10,35 @@ import {
 import CITIES from './cities.json';
 import { type NavigationScreenProp }
   from 'react-navigation/src/TypeDefinition';
+import { getCoordinates } from './GeolocationService';
 
 type Props = {
   navigation: NavigationScreenProp<*>,
 };
 
-class CityListScreen extends Component<Props> {
+type State = {
+  data: *[],
+};
+
+class CityListScreen extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = { data: CITIES };
+  }
+
+  componentDidMount() {
+    getCoordinates()
+      .then(({ latitude, longitude }) => {
+        CITIES.unshift({
+          name: '現在地',
+          en: 'HERE',
+          latitude,
+          longitude,
+        });
+        this.setState({ data: CITIES });
+      });
+  }
+
   onPress(item: *) {
     console.log('onPress', item);
     const { navigation } = this.props;
@@ -25,7 +48,7 @@ class CityListScreen extends Component<Props> {
   render() {
     return (
       <FlatList
-        data={CITIES}
+        data={this.state.data}
         keyExtractor={item => item.en}
         renderItem={({ item }) => (
           <TouchableOpacity
