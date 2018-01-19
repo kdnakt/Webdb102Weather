@@ -1,0 +1,900 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "flexDirection": "column-reverse",
+        },
+        Object {
+          "backgroundColor": "#000",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        collapsable={undefined}
+        pointerEvents="auto"
+        style={
+          Object {
+            "backgroundColor": "#E9E9EF",
+            "bottom": 0,
+            "left": 0,
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+            "shadowColor": "black",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.2,
+            "shadowRadius": 5,
+            "top": 0,
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+              Object {
+                "translateY": 0,
+              },
+            ],
+          }
+        }
+      >
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "en": "Hokkaidō",
+                "name": "北海道",
+              },
+              Object {
+                "en": "Aomori-ken",
+                "name": "青森県",
+              },
+              Object {
+                "en": "Iwate-ken",
+                "name": "岩手県",
+              },
+              Object {
+                "en": "Miyagi-ken",
+                "name": "宮城県",
+              },
+              Object {
+                "en": "Akita-ken",
+                "name": "秋田県",
+              },
+              Object {
+                "en": "Yamagata-ken",
+                "name": "山形県",
+              },
+              Object {
+                "en": "Fukushima-ken",
+                "name": "福島県",
+              },
+              Object {
+                "en": "Ibaraki-ken",
+                "name": "茨城県",
+              },
+              Object {
+                "en": "Tochigi-ken",
+                "name": "栃木県",
+              },
+              Object {
+                "en": "Gunma-ken",
+                "name": "群馬県",
+              },
+              Object {
+                "en": "Saitama-ken",
+                "name": "埼玉県",
+              },
+              Object {
+                "en": "Chiba-ken",
+                "name": "千葉県",
+              },
+              Object {
+                "en": "Tōkyō-to",
+                "name": "東京都",
+              },
+              Object {
+                "en": "Kanagawa-ken",
+                "name": "神奈川県",
+              },
+              Object {
+                "en": "Niigata-ken",
+                "name": "新潟県",
+              },
+              Object {
+                "en": "Toyama-ken",
+                "name": "富山県",
+              },
+              Object {
+                "en": "Ishikawa-ken",
+                "name": "石川県",
+              },
+              Object {
+                "en": "Fukui-ken",
+                "name": "福井県",
+              },
+              Object {
+                "en": "Yamanashi-ken",
+                "name": "山梨県",
+              },
+              Object {
+                "en": "Nagano-ken",
+                "name": "長野県",
+              },
+              Object {
+                "en": "Gifu-ken",
+                "name": "岐阜県",
+              },
+              Object {
+                "en": "Shizuoka-ken",
+                "name": "静岡県",
+              },
+              Object {
+                "en": "Aichi-ken",
+                "name": "愛知県",
+              },
+              Object {
+                "en": "Mie-ken",
+                "name": "三重県",
+              },
+              Object {
+                "en": "Shiga-ken",
+                "name": "滋賀県",
+              },
+              Object {
+                "en": "Kyōto-fu",
+                "name": "京都府",
+              },
+              Object {
+                "en": "Ōsaka-fu",
+                "name": "大阪府",
+              },
+              Object {
+                "en": "Hyōgo-ken",
+                "name": "兵庫県",
+              },
+              Object {
+                "en": "Nara-ken",
+                "name": "奈良県",
+              },
+              Object {
+                "en": "Wakayama-ken",
+                "name": "和歌山県",
+              },
+              Object {
+                "en": "Tottori-ken",
+                "name": "鳥取県",
+              },
+              Object {
+                "en": "Shimane-ken",
+                "name": "島根県",
+              },
+              Object {
+                "en": "Okayama-ken",
+                "name": "岡山県",
+              },
+              Object {
+                "en": "Hiroshima-ken",
+                "name": "広島県",
+              },
+              Object {
+                "en": "Yamaguchi-ken",
+                "name": "山口県",
+              },
+              Object {
+                "en": "Tokushima-ken",
+                "name": "徳島県",
+              },
+              Object {
+                "en": "Kagawa-ken",
+                "name": "香川県",
+              },
+              Object {
+                "en": "Ehime-ken",
+                "name": "愛媛県",
+              },
+              Object {
+                "en": "Kōchi-ken",
+                "name": "高知県",
+              },
+              Object {
+                "en": "Fukuoka-ken",
+                "name": "福岡県",
+              },
+              Object {
+                "en": "Saga-ken",
+                "name": "佐賀県",
+              },
+              Object {
+                "en": "Nagasaki-ken",
+                "name": "長崎県",
+              },
+              Object {
+                "en": "Kumamoto-ken",
+                "name": "熊本県",
+              },
+              Object {
+                "en": "Ōita-ken",
+                "name": "大分県",
+              },
+              Object {
+                "en": "Miyazaki-ken",
+                "name": "宮崎県",
+              },
+              Object {
+                "en": "Kagoshima-ken",
+                "name": "鹿児島県",
+              },
+              Object {
+                "en": "Okinawa-ken",
+                "name": "沖縄県",
+              },
+            ]
+          }
+          disableVirtualization={false}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          horizontal={false}
+          initialNumToRender={10}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={10}
+          numColumns={1}
+          onContentSizeChange={[Function]}
+          onEndReachedThreshold={2}
+          onLayout={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          updateCellsBatchingPeriod={50}
+          viewabilityConfigCallbackPairs={Array []}
+          windowSize={21}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  北海道
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  青森県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  岩手県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  宮城県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  秋田県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  山形県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  福島県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  茨城県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  栃木県
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "height": 48,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                    "padding": 8,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 18,
+                    }
+                  }
+                >
+                  群馬県
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+    </View>
+    <View
+      cardStyle={undefined}
+      collapsable={undefined}
+      getScreenDetails={[Function]}
+      headerMode={undefined}
+      index={0}
+      layout={
+        Object {
+          "height": 0,
+          "initHeight": 0,
+          "initWidth": 0,
+          "isMeasured": false,
+          "width": 0,
+        }
+      }
+      leftInterpolator={[Function]}
+      mode="float"
+      navigation={
+        Object {
+          "dispatch": [Function],
+          "goBack": [Function],
+          "navigate": [Function],
+          "setParams": [Function],
+          "state": Object {
+            "index": 0,
+            "routes": Array [
+              Object {
+                "key": "Init-id-1516385134472-0",
+                "routeName": "CityList",
+              },
+            ],
+          },
+        }
+      }
+      rightInterpolator={[Function]}
+      router={
+        Object {
+          "getActionForPathAndParams": [Function],
+          "getComponentForRouteName": [Function],
+          "getComponentForState": [Function],
+          "getPathAndParamsForState": [Function],
+          "getScreenConfig": [Function],
+          "getScreenOptions": [Function],
+          "getStateForAction": [Function],
+        }
+      }
+      titleInterpolator={[Function]}
+      transitionConfig={undefined}
+    >
+      <View
+        collapsable={undefined}
+        onLayout={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F7F7F7",
+            "borderBottomColor": "rgba(0, 0, 0, .3)",
+            "borderBottomWidth": 0.5,
+            "height": 64,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+              ]
+            }
+          >
+            <View
+              collapsable={undefined}
+              pointerEvents="box-none"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "bottom": 0,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "opacity": 1,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "transform": Array [
+                    Object {
+                      "translateX": 0,
+                    },
+                  ],
+                }
+              }
+            >
+              <Text
+                accessibilityTraits="header"
+                accessible={true}
+                allowFontScaling={true}
+                collapsable={undefined}
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                onLayout={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, .9)",
+                    "fontSize": 17,
+                    "fontWeight": "600",
+                    "marginHorizontal": 16,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                都道府県一覧
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
