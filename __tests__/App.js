@@ -11,3 +11,9 @@ it('renders correctly', () => {
   );
   expect(tree.toJSON()).toMatchSnapshot();
 });
+
+const mockBaseId = 'id-mocked-uuid';
+let mockUuidCount = 0;
+jest.mock('react-navigation/src/routers/StackRouter', () => ({
+  _getUuid: () => `${mockBaseId}-${mockUuidCount++}`,
+}));
