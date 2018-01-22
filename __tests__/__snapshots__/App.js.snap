@@ -787,7 +787,6 @@ exports[`renders correctly 1`] = `
             "index": 0,
             "routes": Array [
               Object {
-                "key": "Init-id-1516385134472-0",
                 "routeName": "CityList",
               },
             ],

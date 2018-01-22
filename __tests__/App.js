@@ -9,11 +9,26 @@ it('renders correctly', () => {
   const tree = renderer.create(
     <App />
   );
-  expect(tree.toJSON()).toMatchSnapshot();
+  expect(filterKeys(tree.toJSON())).toMatchSnapshot();
 });
 
-const mockBaseId = 'id-mocked-uuid';
-let mockUuidCount = 0;
-jest.mock('react-navigation/src/routers/StackRouter', () => ({
-  _getUuid: () => `${mockBaseId}-${mockUuidCount++}`,
-}));
+// keys are date and order-of-test based, so just removed them
+const filterKeys = (json) => {
+  if (json.children) {
+    json.children.map(child => filterKeys(child))
+  }
+  if (json.props
+    && json.props.navigation
+    && json.props.navigation.state
+    && json.props.navigation.state.routes) {
+    const state = json.props.navigation.state;
+    json.props.navigation.state = {
+      ...state,
+      routes: state.routes.map((route) => {
+        const { key, ...others } = route
+        return filterKeys(others)
+      }),
+    }
+  }
+  return json;
+};
